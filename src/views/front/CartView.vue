@@ -1,5 +1,5 @@
 <template>
-    這是購物車頁面
+    <h2>This is 購物車頁面</h2>
     <table class="table align-middle">
         <thead>
             <tr>

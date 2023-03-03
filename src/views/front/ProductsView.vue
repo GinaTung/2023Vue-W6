@@ -1,5 +1,5 @@
 <template>
-    這是產品列表頁面
+    <h2>This is 產品列表頁面</h2>
     <table class="table">
       <tbody>
         <tr v-for="product in products" :key="product.id">

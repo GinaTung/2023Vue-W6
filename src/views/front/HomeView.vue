@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    這是首頁
+    <h2>首頁</h2>
   </div>
 </template>
 
