@@ -1,49 +1,6 @@
 <template>
-    <h2>This is 購物車頁面</h2>
-    <table class="table align-middle">
-        <thead>
-            <tr>
-                <th>圖片</th>
-                <th>商品名稱</th>
-                <th>價格</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- 需跑迴圈時要顯示才使用v-for -->
-            <tr v-for="product in products" :key="product.id">
-                <td style="width: 200px">
-                    <!-- url是css語法格式
-                    style若圖片重複使用時，建議在html裡撰寫不重複使用寫在css裡 -->
-                    <div style="height: 100px background-size: cover background-position: center"
-                        :style="{backgroundImage:`url('${product.imageUrl}')`}"></div>
-                </td>
-                <td>
-                    {{ product.title}}
-                </td>
-                <td>
-                    <div class="h5" v-if="product.price === product.origin_price">{{product.price }} 元</div>
-                    <div v-else>
-                        <del class="h6">原價 {{ product.origin_price}} 元</del>
-                        <div class="h5">現在只要 {{ product.price}} 元</div>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn-group btn-group-sm">
-                        <button type="button" class="btn btn-outline-secondary"
-                            @click="openModal(product.id)">
-                            <i class="fas fa-spinner fa-pulse"></i>
-                            查看更多
-                        </button>
-                        <button type="button" class="btn btn-outline-danger" @click="addToCart(product.id)">
-                            <i class="fas fa-spinner fa-pulse"></i>
-                            加到購物車
-                        </button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <div class="container">
+    <h2 class="text-center">This is 購物車頁面</h2>
     <!-- 購物車列表 -->
     <div class="text-end">
         <button class="btn btn-outline-danger" type="button" @click="deleteAllCarts">清空購物車</button>
@@ -103,6 +60,7 @@
             </tr>
         </tfoot>
     </table>
+  </div>
 </template>
 
 <script>

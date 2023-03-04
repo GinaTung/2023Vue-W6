@@ -1,11 +1,11 @@
 <template>
-    <h2>This is 產品列表頁面</h2>
+    <h2 class="text-center">This is 產品列表頁面</h2>
     <table class="table">
-      <tbody>
+      <tbody class="text-center">
         <tr v-for="product in products" :key="product.id">
-        <td>{{ product.title }}</td>
+        <td class="align-middle">{{ product.title }}</td>
         <td><img :src="product.imageUrl" width="200" alt=""></td>
-        <td><RouterLink :to="`/product/${product.id}`" class="btn btn-outline-secondary">產品明細</RouterLink>
+        <td class="align-middle"><RouterLink :to="`/product/${product.id}`" class="btn btn-outline-secondary">產品明細</RouterLink>
         <button type="button" class="btn btn-outline-primary" @click="addToCart(product.id)">加入購物車</button>
         </td>
       </tr>
