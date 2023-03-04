@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <h2>首頁</h2>
+    <div class="container">
+      <h2>首頁</h2>
+    </div>
   </div>
 </template>
 
