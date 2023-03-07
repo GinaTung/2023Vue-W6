@@ -28,6 +28,9 @@ export default {
         console.log(res)
         this.products = res.data.products
       })
+        .catch((err) => {
+          console.log(err.data.message)
+        })
     },
     addToCart (id) {
       const data = {

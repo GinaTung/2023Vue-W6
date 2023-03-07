@@ -4,7 +4,7 @@
   <router-link to="/">Home</router-link> |
   <router-link to="/products">前台產品列表</router-link> |
   <router-link to="/cart">前台購物車</router-link> |
-  <router-link to="/about">About</router-link>
+  <router-link to="/admin">後臺購物車列表</router-link>
 </div>
   <hr>
   <RouterView></RouterView>
