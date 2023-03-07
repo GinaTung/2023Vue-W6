@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as o,a as t}from"./index-399c0a00.js";const c={},n={class:"container"},a=t("h1",null,"後臺的訂單列表.",-1),r=[a];function _(d,i,p,l,f,h){return s(),o("div",n,r)}const u=e(c,[["render",_]]);export{u as default};
