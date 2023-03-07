@@ -18,8 +18,8 @@
             <template v-if="cart.carts">
                 <tr v-for="item in cart.carts" :key="item.id">
                     <td>
-                        <button type="button" class="btn btn-outline-danger btn-sm">
-                            <i class="fas fa-spinner fa-pulse" @click="deleteItem(item)"
+                        <button type="button" class="btn btn-outline-danger btn-sm"  @click="deleteItem(item)">
+                            <i class="fas fa-spinner fa-pulse"
                                 :disabled="item.id === loadingItem"></i>
                             x
                         </button>
